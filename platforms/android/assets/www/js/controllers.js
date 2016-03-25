@@ -3,10 +3,13 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope) {
 
 $scope.pedometer;
-$scope.count = 0;
+$scope.resetCount = 0;
+$scope.total = 0;
+$scope.x;
 
 var successHandler = function (pedometerData) {
-  $scope.pedometer = pedometerData.numberOfSteps;
+  $scope.x = pedometerData.numberOfSteps;
+  $scope.pedometer = $scope.x;
   console.log("pedometerData", pedometerData);
   $scope.$apply();
   }
@@ -14,9 +17,17 @@ var successHandler = function (pedometerData) {
   var errorHandler = function (pedometerData) {
     console.log(pedometerData)
   };
-  
-  $scope.pressButton = function(){
-    $scope.count++;
+
+  $scope.resetButton = function(){
+    $scope.resetCount++;
+      if ($scope.pedometer > 1) {
+        console.log("Greater than 1");
+        $scope.total += $scope.pedometer
+        $scope.x = 0;
+        $scope.pedometer = 0;
+      } else {
+        console.log("Walk somewhere.");
+      }
   } 
 
 
