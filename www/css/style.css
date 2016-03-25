@@ -1,1 +1,11 @@
 /* Empty. Add your own CSS if you like */
+.showSteps{
+	color: orange;
+    font-size: 175px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#picture-box{
+	margin-top: 100px;
+}

@@ -48,7 +48,7 @@
     <author email="painejacob@gmail.com" href="http://www.jacobpaine.com/">
       Jacob Paine
     </author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://10.0.0.89:8100" />
     <allow-navigation href="*" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
