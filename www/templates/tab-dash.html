@@ -1,14 +1,15 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Dashboard" cache-view="false">
   <ion-content class="padding">
   <div>
     <h2>Walk Paine walk.</h2>
-        <p class="showSteps">{{pedometer}}</p>
+        <p class="showSteps">{{steps}}</p>
   </div>
   <div id="picture-box">
     Image goes here.
   </div>
   <div>
     <button class="button" ng-click="resetButton()">Reset Button</button>
+
     <p>{{resetCount}}</p>
     <p>Total</p>
     <p>{{total}}</p>

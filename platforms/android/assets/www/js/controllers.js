@@ -1,39 +1,35 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
+  document.addEventListener("deviceready", function () {
+    $scope.steps;
+    $scope.resetCount = 0;
+    $scope.total = 0;
 
-$scope.pedometer;
-$scope.resetCount = 0;
-$scope.total = 0;
-$scope.x;
-
-var successHandler = function (pedometerData) {
-  $scope.x = pedometerData.numberOfSteps;
-  $scope.pedometer = $scope.x;
-  console.log("pedometerData", pedometerData);
-  $scope.$apply();
-  }
-
-  var errorHandler = function (pedometerData) {
-    console.log(pedometerData)
-  };
-
-  $scope.resetButton = function(){
-    $scope.resetCount++;
-      if ($scope.pedometer > 1) {
-        console.log("Greater than 1");
-        $scope.total += $scope.pedometer
-        $scope.x = 0;
-        $scope.pedometer = 0;
-      } else {
-        console.log("Walk somewhere.");
+    var successHandler = function (pedometerData) {
+      $scope.steps = pedometerData.numberOfSteps - $scope.total;
+      console.log("pedometerData", pedometerData);
+      $scope.$apply();
+      $scope.$digest();
       }
-  } 
 
+      var errorHandler = function (pedometerData) {
+        console.log(pedometerData)
+      };
 
-pedometer.startPedometerUpdates(successHandler, errorHandler);
+      $scope.resetButton = function(){
+        $scope.resetCount++;
+          if ($scope.steps > 1) {
+            console.log("Greater than 1");
+            $scope.total += $scope.steps
+            $scope.steps = 0;
+          } else {
+            console.log("Walk somewhere.");
+          }
+      } 
 
-
+    pedometer.startPedometerUpdates(successHandler, errorHandler);
+  }, false);
 })
 
 // .controller('ChatsCtrl', function($scope, Chats) {
