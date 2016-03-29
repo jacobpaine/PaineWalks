@@ -1,25 +1,37 @@
 //Create the renderer
-var myCanvas = document.getElementById('picture-box');
-var renderer = PIXI.autoDetectRenderer(100, 100, {view: myCanvas});
+var stage = new PIXI.Container(), 
+	renderer = PIXI.autoDetectRenderer(225, 170);
+
 //Add the canvas to the HTML document
-document.myCanvas.appendChild(renderer.view);
+document.body.appendChild(renderer.view);
 
-var blah = document.body.childNodes;
-console.log("blah", blah);
 
-// function canvasIt(){
-// 	console.log("CanvasIt");
-// 	document.appendChild(renderer.view);
-// }
+//Use Pixi's built-in `loader` object to load an image
+PIXI.loader
+  .add("assets/img/lich.gif")
+  .load(setup);
 
-function changeColor(newColor) {
-	var thing = document.getElementById('thing');
-	thing.style.color = newColor;
-}
+//This `setup` function will run when the image has loaded
+function setup() {
 
-//Create a container object called the `stage`
-var stage = new PIXI.Container();
-renderer.view.style.border = "1px dashed red";
+  //Create the sprite from the texture
+  var test = new PIXI.Sprite(
+    PIXI.loader.resources["assets/img/lich.gif"].texture
+  );
+
+	test.position.set(0, 5)
+	test.scale.x = 2;
+	test.scale.y = 2;
+
+
+  //Add the sprite to the stage
+  stage.addChild(test);
+
+renderer.autoResize = true;
+// renderer.resize(window.innerWidth, window.innerHeight);
+renderer.view.style.border = "1px solid red";
 renderer.backgroundColor = 0x061639;
 //Tell the `renderer` to `render` the `stage`
 renderer.render(stage);
+}
+

@@ -25,7 +25,7 @@ angular.module('starter.controllers', [])
         } else if($scope.steps <= 45 && $scope.steps > 35) {
           $scope.message = "Feeling good!"
         } else if($scope.steps <= 55 && $scope.steps > 45) {
-          $scope.message = "Wow you really stuck with it!"
+          $scope.message = "I think I'll stay forever."
         } else {
           $scope.message = "Hungry!!"
         }

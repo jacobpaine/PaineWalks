@@ -1,0 +1,35 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="basilisk_000.png" x="228" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_001.png" x="456" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_002.png" x="456" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_003.png" x="456" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_004.png" x="456" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_005.png" x="342" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_006.png" x="456" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_007.png" x="342" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_008.png" x="342" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_009.png" x="342" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_010.png" x="342" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_011.png" x="228" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_012.png" x="228" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_013.png" x="228" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_014.png" x="228" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_015.png" x="456" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_016.png" x="228" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_017.png" x="228" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_018.png" x="228" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_019.png" x="114" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_020.png" x="228" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_021.png" x="228" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_022.png" x="114" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_023.png" x="114" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_024.png" x="114" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_025.png" x="114" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_026.png" x="114" y="0" width="112" height="88"/>
+	<SubTexture name="basilisk_027.png" x="0" y="360" width="112" height="88"/>
+	<SubTexture name="basilisk_028.png" x="0" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_029.png" x="0" y="180" width="112" height="88"/>
+	<SubTexture name="basilisk_030.png" x="0" y="270" width="112" height="88"/>
+	<SubTexture name="basilisk_031.png" x="0" y="90" width="112" height="88"/>
+	<SubTexture name="basilisk_032.png" x="0" y="0" width="112" height="88"/>
+</TextureAtlas>
