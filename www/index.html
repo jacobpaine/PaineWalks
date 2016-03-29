@@ -24,20 +24,22 @@
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
   </head>
-  <body ng-app="starter">
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
-    <!--
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
-    <ion-nav-view></ion-nav-view>
+  <body ng-app="starter" ng-controller="DashCtrl">
+    <h2>Walk Paine walk.</h2>
+    <div id="picture-box">
+      <p class="showSteps">{{steps}}</p>
+      <div class="buttonRow">
+        <button id="info" class="button" ng-click="info();">Wait, what?</button>
+        <button id="info" class="button" ng-click="resetButton();">Reset Game</button>
+        <p id="infoMsg">{{infoMsg}}</p>
+      </div>
+  </div>
+
+
   </body>
+  <p id="lichTalk">{{message}}</p>
+        <script src="js/pixi.min.js"></script>
+        <script src="js/imageStage.js"></script>
+        <script>console.log("PIXI 1", PIXI);</script>
 </html>
 

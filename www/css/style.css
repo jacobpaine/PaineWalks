@@ -1,11 +1,41 @@
 /* Empty. Add your own CSS if you like */
 .showSteps{
 	color: orange;
-    font-size: 175px;
+    font-size: 120px;
     text-align: center;
     margin-top: 20%;
+    margin-right: 8%;
 }
 
 #picture-box{
-	margin-top: 100px;
+	margin-top: 25%;
+	margin-right: 25%;
+	width: 100%;
+}
+
+canvas {
+	margin-left: 15%;
+	margin-bottom: 15%;
+}
+
+.buttonRow {
+	margin-bottom: 10%;
+	margin-left: 35%;
+}
+
+#info {
+	margin-left: 40%;
+}
+
+#infoMsg {
+	margin-top: 5%;
+	margin-left: 10%;
+	font-size: 20px;
+}
+
+#lichTalk{
+	text-align: center;
+	font-size: 35px;
+	margin-top: 20%;
+	margin-bottom: 20%;
 }
