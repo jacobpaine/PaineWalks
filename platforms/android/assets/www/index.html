@@ -22,6 +22,7 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/howler.min.js"></script>
   </head>
   <body ng-app="starter" ng-controller="DashCtrl" class="platform-android platform-cordova platform-webview">
     <h2>Walk Paine walk.</h2>
@@ -37,8 +38,16 @@
 
   </body>
   <p id="lichTalk">{{message}}</p>
-        <script src="js/pixi.min.js"></script>
-        <script src="js/imageStage.js"></script>
-        <script>console.log("PIXI 1", PIXI);</script>
+  <button id="play" onclick="play()">Play me</button>    
+  <script>
+      function play() {
+          var sound = new Howl({
+            urls: ['http://misc.avoid.org/howler/test.mp3']
+          }).play();
+      }
+  </script>
+  <script src="js/pixi.min.js"></script>
+  <script src="js/imageStage.js"></script>
+  <script>console.log("PIXI 1", PIXI);</script>
 </html>
 

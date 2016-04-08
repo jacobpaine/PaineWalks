@@ -1,5 +1,5 @@
 
-var renderer = PIXI.autoDetectRenderer(224, 176);
+var renderer = PIXI.autoDetectRenderer(225, 177);
 document.body.appendChild(renderer.view);
 
 // create the root of the scene graph
@@ -31,10 +31,10 @@ function onAssetsLoaded()
      * A MovieClip inherits all the properties of a PIXI sprite
      * so you can change its position, its anchor, mask it, etc
      */
-    movie.position.set(0.5);
+    movie.position.set(1);
 
     movie.anchor.set(0);
-    movie.animationSpeed = 0.3;
+    movie.animationSpeed = 0.2;
 
     movie.play();
 
