@@ -1,30 +1,32 @@
 
 
 
-var renderer = PIXI.autoDetectRenderer(800, 600);
+var renderer = PIXI.autoDetectRenderer(300, 200);
 document.body.appendChild(renderer.view);
 
 // create the root of the scene graph
 var stage = new PIXI.Container();
 
-PIXI.loader
-    .add('assets/img/spritesheet.json')
+new PIXI.loader
+    .add('assets/img/dorySwim.json')
     .load(onAssetsLoaded);
 
 var movie;
 
-
 function onAssetsLoaded()
 {
     // create an array of textures from an image path
+    var texture = new PIXI.Texture.fromImage("assets/img/dorySwim.png");
     var frames = [];
 
-    for (var i = 0; i < 30; i++) {
+    for (var i = 1; i < 60; i++) {
         var val = i < 10 ? '0' + i : i;
 
         // magically works since the spritesheet was loaded with the pixi loader
-        frames.push(PIXI.Texture.fromFrame(‘frameID”));
-    
+
+        frames.push(texture)
+
+
     }
 
     // create a MovieClip (brings back memories from the days of Flash, right ?)
