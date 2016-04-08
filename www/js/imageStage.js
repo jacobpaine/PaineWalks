@@ -31,7 +31,7 @@ function onAssetsLoaded()
      * A MovieClip inherits all the properties of a PIXI sprite
      * so you can change its position, its anchor, mask it, etc
      */
-    movie.position.set(0);
+    movie.position.set(0.5);
 
     movie.anchor.set(0);
     movie.animationSpeed = 0.3;

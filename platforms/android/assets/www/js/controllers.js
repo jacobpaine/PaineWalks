@@ -40,9 +40,9 @@ angular.module('starter.controllers', [])
         $scope.infoCount++
         console.log("infoCount", $scope.infoCount);
         if($scope.infoCount <= 0){
-          $scope.info = "There's nothing worse than a bad case of pocket Lich..";
+          $scope.info = "There's nothing worse than a bad case of pocket Critter..";
         } else if($scope.infoCount === 1 ){
-          $scope.infoMsg = "1. Looks like you picked up a pocket Lich somewhere.";
+          $scope.infoMsg = "1. Looks like you picked up a pocket Critter somewhere.";
         } else if($scope.infoCount === 2 ){
           $scope.infoMsg = "2. He's just a little one, so no big deal.";
         } else if($scope.infoCount === 3 ){
@@ -50,7 +50,7 @@ angular.module('starter.controllers', [])
         } else if($scope.infoCount === 4 ){
           $scope.infoMsg = "4. If you feed him enough, maybe he'll go away.";
         } else {
-          $scope.infoMsg = "There's nothing worse than a bad case of pocket Lich.";
+          $scope.infoMsg = "There's nothing worse than a bad case of pocket Critter.";
         }
       }
         $scope.resetButton = function(){
@@ -66,42 +66,3 @@ angular.module('starter.controllers', [])
   }, false);
 })
 
-// .controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-//   $scope.chats = Chats.all();
-//   $scope.remove = function(chat) {
-//     Chats.remove(chat);
-//   };
-// })
-
-// .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-//   $scope.chat = Chats.get($stateParams.chatId);
-// })
-
-.controller('AccountCtrl', ['$scope', function($scope) {
-//   $scope.pedometer;
-
-// var successHandler = function (pedometerData) {
-//   $scope.pedometer = pedometerData.numberOfSteps;
-//   console.log("pedometerData", pedometerData);
-//   $scope.$apply();
-//   }
-
-//   var errorHandler = function (pedometerData) {
-//     console.log(pedometerData)
-//   };
-
-// pedometer.startPedometerUpdates(successHandler, errorHandler);
-
-  $scope.settings = {
-    enableFriends: true,
-  };
-
-}]);
